@@ -1,0 +1,17 @@
+.button {
+  background-color: transparent;
+  width: 200px;
+  height: 50px;
+  border: 2px solid #285aff;
+  color: #285aff;
+  font-size: 20px;
+  transition: all .5s;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    border-color: #ff3628;
+    box-shadow: 0 5px 5px #ff3628;
+    color: #ff3628;
+  }
+}
