@@ -2,7 +2,7 @@ import "./Button-module.scss";
 
 const Button = (props) => {
   return (
-    <button className="button" onClick={() => console.log(props)}>
+    <button className="button" {...props}>
       {props.children}
     </button>
   )
