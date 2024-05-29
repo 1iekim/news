@@ -1,7 +1,7 @@
 {
   "name": "news",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://1iekim.github.io/news/build/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
