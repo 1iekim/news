@@ -10,7 +10,7 @@ class Loader {
       console.log("No callback for GET response!");
     }
   ) {
-    this.load("GET", endpoint, callback, options);
+    this.load(endpoint, callback, options);
   }
 
   errorHandler(res) {
