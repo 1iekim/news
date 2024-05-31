@@ -14,6 +14,7 @@ class Loader {
   }
 
   errorHandler(res) {
+    console.log(res);
     if (!res.ok) {
       if (res.status === 401 || res.status === 404)
         console.log(
@@ -25,7 +26,7 @@ class Loader {
   }
 
   makeUrl(options, endpoint) {
-    const urlOptions = { ...options, ...this.options };
+    const urlOptions = { ...this.options, ...options };
     let url = `${this.baseLink}${endpoint}?`;
 
     Object.keys(urlOptions).forEach((key) => {
@@ -40,7 +41,7 @@ class Loader {
       .then(this.errorHandler)
       .then((res) => res.json())
       .then((data) => callback(data))
-      .catch((err) => console.log(err));
+      .catch((err) => console.error(err));
   }
 }
 
